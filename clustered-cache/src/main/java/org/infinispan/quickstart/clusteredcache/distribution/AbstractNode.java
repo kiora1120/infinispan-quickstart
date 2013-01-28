@@ -48,7 +48,8 @@ public abstract class AbstractNode {
    }
 
    private static EmbeddedCacheManager createCacheManagerFromXml() throws IOException {
-      return new DefaultCacheManager("infinispan-distribution.xml");
+//      return new DefaultCacheManager("infinispan-distribution.xml");
+      return new DefaultCacheManager("tj-dist.xml");
    }
    
    public static final int CLUSTER_SIZE = 3;

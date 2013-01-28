@@ -32,7 +32,7 @@ public class Node2 extends AbstractNode {
    }
 
    public void run() {
-      Cache<String, String> cache = getCacheManager().getCache("Demo");
+      Cache<String, String> cache = getCacheManager().getCache("distributedCache");
 
       waitForClusterToForm();
 

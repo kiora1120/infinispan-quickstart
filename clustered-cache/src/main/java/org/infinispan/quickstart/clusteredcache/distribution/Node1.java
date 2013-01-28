@@ -32,7 +32,7 @@ public class Node1 extends AbstractNode {
    }
 
    public void run() {
-      Cache<String, String> cache = getCacheManager().getCache("Demo");
+      Cache<String, String> cache = getCacheManager().getCache("distributedCache");
       
       // Add a listener so that we can see the puts to this node
       cache.addListener(new LoggingListener());
